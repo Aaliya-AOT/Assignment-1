@@ -1,0 +1,340 @@
+@media screen and (max-width: 769px){
+    .nav-indlink{
+        display: none;
+    }
+    .nav-login,.nav-signin{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .dropdown-menu{
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        margin-top: 20px;
+    }
+    .dropdown-menu p {
+        display: block;
+        padding: 10px 85px;
+        margin: 0;
+        color: #475467;
+        text-decoration: none;
+       
+    }
+    .open-btn, .close-btn {
+        cursor: pointer;
+    }
+    .dropdown-menu p:hover{
+        background-color: #F0FDF9;
+        color: #107569;
+        transition: all 0.5s;
+    }
+    .hamburger .close-btn {
+        display: none;
+    }
+    .hamburger-menu:checked ~ .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+    .hamburger-menu:checked ~ .open-btn {
+        display: none;
+        transition: all 0.5s;
+    }    
+    .hamburger-menu:checked ~ .close-btn {
+        display: block; 
+        transition: all 0.5s;
+    }
+    .content{
+        align-items:center; 
+        margin: 0; 
+        text-align: center;  
+        justify-content: space-between; 
+    }
+    .content-img{
+        margin: auto;
+        order: 1;
+    }
+    .content-info{
+        max-width: 680px;
+        order: 2;
+    }
+    .try-button1{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 48px;
+    }
+    .about-main{
+        padding: 64px 32px;
+        gap: 28px;
+    }
+    .about-us{
+        margin-top: 12px;
+    }
+    .about-title{
+        gap: 4px;
+    }
+    .about-head{
+        margin-bottom: 0px;
+    }
+    .img-mission{
+        flex-direction: column;
+    }
+    .about-four{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .features-main{
+        padding: 64px 16px;
+        gap: 28px;
+    }
+    .sub-mission{
+        max-width: 324px;
+    }
+    .features-card{
+        gap: 32px;
+        margin: auto;
+        justify-content: center;
+    }
+    .sub-features{
+        max-width: 280px;
+    }
+    .f-sub1{
+        font-size: 32px;
+    }
+    .analytic-main{
+        padding: 64px 32px;
+        gap: 48px;
+        flex-direction: column;
+    }
+    .analytic-info{
+        max-width: 680px;
+        order: 2;
+    }
+    .analytic-img{
+        order: 1;
+    }
+    .free-main{
+        padding: 64px 32px;
+        gap: 10px;
+    }
+    .free-sub{
+        max-width: 680px;
+    }
+    footer{
+        padding: 64px 32px;
+    }
+    .footer-top{
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 0px;
+        gap: 10px;
+    }
+    .company{
+        margin-top: 40px;
+    }
+    .company-arrow{
+        margin-top: 30px;
+    }
+    .copyright-line{
+        font-size: 14px;
+    }
+    .footer-bottom{
+        gap: 40px;
+        margin: 0;
+    }
+    .footer-subinfo{
+        display: none;
+    }
+    .footer-accordion{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 16px;
+    }
+    .accordion-title{
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #475467;
+    }
+    .footer-menu{
+        display: none;
+    }
+    .footer-accordion-menu{
+        display: none;
+        margin-top: 20px;
+    }
+    .footer-accordion-menu p{
+        display: block;
+        margin-left: 5px;
+        margin-bottom: 16px;
+        padding: 6px 12px;
+    }
+    .arrow-btn{
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-accordion-menu p:hover{
+        background-color: #F0FDF9;
+        color: #107569;
+        transition: all 0.2s;
+    }
+    .footer-menu:checked~ .footer-accordion-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+        transition: all 0.2s;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    nav{
+        padding: 16px 16px;    
+    }
+    .content{
+        align-items:center; 
+        margin: 0; 
+        text-align: center;  
+        justify-content: space-between; 
+    }
+    .content-title{
+        font-size: 36px;
+        line-height: 44px;
+        text-align: justify;
+    }
+    .content-desc{
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+    }
+    .content-img{
+        margin: auto;
+        order: 1;
+    }
+    .content-info{
+        width: 100%;
+        order: 2;
+    }
+    .try-button1{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    .about-para{
+        font-size: 22px;
+    }
+    .about-us{
+        font-size: 34px;
+    }
+    .about-four{
+        text-align:left;
+    }
+    .about-info{
+        font-size: 18px
+    }
+    .sub-mission{
+        min-width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .about-title2{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .features-main {
+        padding: 64px 16px;
+        gap: 28px;
+    }
+    .features-title{
+        gap: 30px;
+        min-width: 100%;
+    }
+    .features-info{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .f-sub1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .f-sub2{
+        min-width: 100%;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .f-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .sub-features {
+        max-width: 343px;
+        padding: 32px 24px;;
+    }
+    .analytic-info {
+        min-width: 100%;
+    }
+    .analytic-title {
+        font-size: 34px;
+    }
+    .analytic-desc {
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .free-main{
+        padding: 32px 16px;
+    }
+    .free-title{
+        gap: 1px;
+    }
+    .free-sub {
+        width: 100%;
+        padding: 48px 16px;
+        gap: 40px;
+        margin: 0;
+    }
+    .free-maintitle {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .free-subtitle {
+        font-size: 22px;
+        color: #D0D5DD;
+        line-height: 34px;;
+    }
+    .try-button2 {
+        justify-content: center;
+        text-align: center;
+        padding: 12px 85px;
+    }
+    footer {
+        padding: 48px 16px;
+        gap: 20px;
+    }
+    .footer-bottom {
+        gap: 1px;
+        margin: 0;
+        display: block;
+    }
+    .company {
+        margin-top: 50px;
+    }
+    .copyright-line {
+        margin-bottom: 8px;
+    }
+}   
