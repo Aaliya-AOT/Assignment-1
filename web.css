@@ -2,9 +2,7 @@ body{
     font-family: "Poppins",sans-serif;
     margin: 0;
 }
-img{
-    max-width: 100%;
-}
+
 
 
 /* nav bar css */
@@ -50,6 +48,7 @@ nav{
     border: none;
     padding: 8px 14px;
     color: white;
+    font-weight: 600;
 }
 .log-sign{
     display: flex;
@@ -79,7 +78,7 @@ nav{
 /* main page-content css */
 .content{
     max-width: 1280px;
-    padding: 48px 32px;
+    padding: 64px 32px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -114,6 +113,7 @@ nav{
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+    margin-bottom: 50px;
 }
 .try-button1,.try-button2{
     line-height: 28px;
@@ -126,8 +126,12 @@ nav{
     font-weight: 600;
     display: flex;
     margin-top: auto;
+    transition: all 0.5s;
 }
-
+.try-button1:hover, .try-button2:hover{
+    background-color: #0E9384;
+    cursor: pointer;
+}
 
 /* about css */
 .about-main{
@@ -162,6 +166,7 @@ nav{
     font-size: 36px;
     line-height: 44px;
     margin-bottom: 0;
+    margin-top: 12px;
 }
 .about-para{
     font-weight: 400;
@@ -188,6 +193,9 @@ nav{
 .sub-mission{
     max-width: 272px;
     margin: auto;
+}
+.vision{
+    margin-top: 20px;
 }
 .about-title2,.features-title2{
     font-weight: 600;
@@ -344,7 +352,7 @@ nav{
 
 /* footer page css */
 footer {
-    padding: 64px 40px;
+    padding: 64px 76px;
     border-top: 1px solid #D0D5DD;
     max-width: 100%;
     margin: auto;
@@ -362,6 +370,7 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: auto;
+    gap: 10px;
 }
 .footer-name{
     display: inline-block;

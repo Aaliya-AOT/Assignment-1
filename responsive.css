@@ -1,4 +1,7 @@
 @media screen and (max-width: 769px){
+    img{
+        max-width: 100%;
+    }
     .nav-indlink{
         display: none;
     }
@@ -98,6 +101,9 @@
     .sub-mission{
         max-width: 324px;
     }
+    .vision{
+        margin-top: 0;
+    }
     .features-card{
         gap: 32px;
         margin: auto;
@@ -105,6 +111,14 @@
     }
     .sub-features{
         max-width: 280px;
+        padding: 24px 32px;
+        /* max-height: 230px; */
+    }
+    .advanced{
+        padding: 32px 36px;
+    }
+    .multi{
+        padding: 34px 36px;
     }
     .f-sub1{
         font-size: 32px;
@@ -169,6 +183,9 @@
     .footer-menu{
         display: none;
     }
+    .footer-accordion:last-child{
+        border: none;
+    }
     .footer-accordion-menu{
         display: none;
         margin-top: 20px;
@@ -201,6 +218,9 @@
 
 
 @media screen and (max-width: 480px){
+    img{
+        max-width: 100%;
+    }
     nav{
         padding: 16px 16px;    
     }
@@ -304,7 +324,7 @@
     }
     .free-sub {
         width: 100%;
-        padding: 48px 16px;
+        padding: 64px 16px;
         gap: 40px;
         margin: 0;
     }
