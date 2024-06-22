@@ -1,0 +1,498 @@
+$main_width: 1440px;
+$container_width: 1280px;
+$sub_width: 1216px;
+$ipad_width: 1024px;
+$ipad_content_width: 744px;
+$ipad_container_width: 680px;
+$mobile_width: 480px;
+$mobile_container_width: 375px;
+$mobile_content_width: 343px;
+$card_width: 324px;
+
+$large_fontsize: 3.75rem;
+$subheading_fontsize: 2.25rem;
+$mobile_fontsize: 1.875rem;
+$info_fontsize: 1.25rem;
+$standard_fontsize: 1rem;
+$btn_fontsize: 1.125rem;
+$min_fontsize: 0.875rem;
+
+$primary_1: #475467;
+$primary_2: #15B79E;
+$primary_3: #101828;
+$primary_4: #125D56;
+
+$secondary_1: #D0D5DD;
+$secondary_2: #F0FDF9;
+$secondary_3: #107569;
+$secondary_4: #0E9384;
+
+img{
+    max-width: 100%;
+}
+@media screen and (max-width:1024px) {
+    //Ipad Nav Bar Section
+    nav{
+        max-width: $ipad_width;
+        .navbar-container{
+            .navbar-left-content{
+                .nav-menu-container{
+                    display: none;
+                }
+            }
+            .navbar-right-content{
+                display: none;
+            }
+            .hamburger{
+                display: flex;
+                align-items: center;
+                max-width: $ipad_width;
+                .hamburger-menu ,.close-btn{
+                    display: none;
+                }
+                .open-btn, .close-btn{
+                    cursor: pointer;
+                }
+                .hamburger-menu:checked ~ .open-btn {
+                    display: none;
+                    transition: all ease 0.5s;
+                }    
+                .hamburger-menu:checked ~ .close-btn {
+                    display: block; 
+                    transition: all ease 0.5s;
+                }
+                .hamburger-menu:checked ~ .dropdown-menu {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    padding: 0;
+                }
+                .dropdown-menu li:hover{
+                    background-color: $secondary_2;
+                    color: #107569;
+                    transition: all ease 0.5s;
+                }
+                .dropdown-menu{
+                    display: none;
+                    list-style: none;
+                    // max-width: $ipad_width;
+                    // // min-width: 100%;
+                    position: absolute;
+                    font-weight: 600;
+                    line-height: 24px;
+                    font-size: $standard_fontsize;
+                    top: 60px;
+                    right: 0px;
+                    left: 0px;
+                    background-color: white;
+                    z-index: 1000;
+                    margin-top: 20px;
+                    gap: 10px;
+                    margin: 0;
+                   
+
+                    & li{
+                        max-width: $ipad_width;
+                        display: block;
+                        padding: 6px 32px 6px 76px;
+                        text-align: left;
+                        color: #475467;
+                        text-decoration: none;
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+    //Ipad Intro Page Section
+    .intro-container{
+        max-width: $ipad_width;
+        padding: 64px 32px;
+        gap: 32px;
+        margin: auto;
+        flex-direction: column-reverse;
+        .intro-left-content{
+            max-width: $ipad_container_width;
+            align-items: center;
+            .intro-description{
+                align-items: center;
+                text-align: center;
+            }
+            #intro-try-btn{ 
+                max-width:$ipad_container_width;
+                width: 100%;
+            }
+        }
+        .intro-right-content{
+            max-width: 500px;
+            align-items: center;
+        }
+    }
+    //Ipad About us Section
+    .about-us-container{
+        max-width: $ipad_width;
+        padding: 64px 32px;
+        gap: 48px; 
+        
+        .about-us-top{
+            max-width: $ipad_container_width;   
+            margin: auto;
+        }
+        .about-us-bottom{
+            flex-direction: column;
+            justify-content: space-between;
+            .about-us-left{
+                margin: auto;
+                & img{
+                    width: 500px;
+                }
+            }
+            .about-us-right{
+                max-width: $ipad_width;
+                .about-card-container{
+                    max-width: $ipad_width;
+                    width: 100%;
+                    justify-content: center;
+                    .about-us-card{
+                        max-width: $card_width;
+                        width: 100%;
+                        
+                    }
+                }
+            }
+        }
+    }
+    //Ipad Features Section
+    .green-space{
+        max-width: $ipad_width;
+        width: 100%;
+        padding: 0px;
+        // margin: auto;
+        .features-container{
+           max-width: $ipad_container_width;
+            padding: 64px 32px;
+            align-items: center;
+            .features-bottom{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    //Ipad Analytics Section
+    .analytic-container{
+        max-width: $ipad_width;
+        padding: 64px 32px;
+        gap: 48px;
+        flex-direction: column-reverse;
+        .analytic-left-content{
+            max-width: $ipad_content_width;
+            width: 100%;
+        }
+        .analytic-right-content{
+            max-width: 100%;
+            & img{
+                max-width: 500px;
+            }
+        }
+    }
+    //Ipad Trial Section
+    .trial-container{
+        max-width: $ipad_width;
+        padding: 64px 32px;
+        .trial-green-container{
+            max-width: $ipad_container_width;
+            width: 100%;
+            padding: 64px 32px;
+        }
+    }
+    //Ipad Footer Section
+    footer{
+        max-width: $ipad_width;
+        padding: 48px 32px 0px 32px;
+        gap: 16px;
+        .footer-top{
+            max-width: $ipad_container_width;
+            flex-direction: column;
+            gap: 48px;
+            padding: 0px;  
+            .footer-right-content{
+                flex-direction: column;
+                .footer-content{
+                    display: none;
+                }
+                .footer-accordion:last-child{
+                    border-bottom: none;
+                }
+                
+                .footer-accordion{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    padding: 0px 0px 19px 0px;
+                    border-bottom: 0.2px solid $secondary_1;
+                    .footer-menu:checked ~ .arrow-btn img{
+                        transform: rotate(180deg);
+                    }
+                    .footer-accordion-menu li:hover{
+                        background-color: #F0FDF9;
+                        color: #107569;
+                        transition: all 0.2s;
+                    }
+                    .footer-menu:checked~ .footer-accordion-menu{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        text-align: left;
+                        transition: all ease 3s;
+                    }
+                    
+                    .arrow-btn{
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-between;
+                        
+                    }
+                    .footer-menu{
+                        display: none;
+                    }
+                    .footer-accordion-menu{
+                        display: none;
+                        padding: 0;
+                        margin: 0;
+                        & li{
+                            display: block;
+                            padding: 6px 12px;
+                            margin:0;
+                            font-weight: 600;
+                            color: $primary_1;
+                            font-size: $standard_fontsize;
+                            line-height: 24px;
+                        }
+                        
+                    }
+                    .accordion-title{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #475467;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .footer-bottom{
+            max-width: $ipad_container_width;
+            padding: 32px 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    //Mobile Nav Bar Section
+    nav{
+        .navbar-container{
+            max-width: $mobile_width;
+            padding: 16px;
+            .hamburger{
+                .dropdown-menu li{
+                    max-width: $mobile_width;
+                    padding: 6px 32px 6px 76px;
+                }
+            }
+        }
+    }
+    //Mobile Intro Page Section
+    .intro-container{
+        max-width: $mobile_width;
+        padding: 64px 16px;
+        .intro-left-content{
+            .intro-description{
+                align-items: center;
+                text-align: center;
+                .intro-title{
+                    font-size: $subheading_fontsize;
+                    line-height: 44px;
+                }
+                .intro-arrow{
+                    max-width: 100%;
+                }
+                .intro-info{
+                    font-size: $btn_fontsize;
+                    line-height: 28px;
+                }
+            }
+            #intro-try-btn{
+                max-width: $mobile_content_width;
+                width: 100%;
+                gap: 8px;
+                padding: 12px 20px;
+                font-size: $standard_fontsize;
+            }
+        }
+        .intro-right-content{
+            max-width: $mobile_content_width;
+            align-items: center;
+        }
+    }
+    //Mobile About us Section
+    .about-us-container{
+        max-width: $mobile_width;
+        padding: 64px 16px;
+        .about-us-top{
+            max-width: $mobile_content_width;
+            .about-us-title{
+                .about-us-subheading{
+                    font-size: $mobile_fontsize;
+                    line-height: 38px;
+                }
+            }
+            & p{
+                font-size: $btn_fontsize;
+                line-height: 28px   ;
+            }
+        }
+        .about-us-bottom{
+            .about-us-left{
+                & img{
+                    width: $mobile_content_width;
+                }
+            }
+            .about-us-right{
+                max-width: $mobile_content_width;
+                width: fill;
+                gap: 32px;
+                .about-card-container{
+                    max-width: $mobile_content_width;
+                    flex-direction: column;
+                    .about-us-card{
+                        width: 100%;
+                        .card-info{
+                            .card-title{
+                                font-size: $btn_fontsize;
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Mobile Features Section
+    .green-space{
+        max-width: $mobile_width;
+        
+        .features-container{
+            width : 100%;
+            padding: 64px 16px;
+            gap: 64px;
+
+            .features-top{
+                max-width: $mobile_content_width;
+                gap: 16px;
+                .features-title{
+                    .features-sub-title{
+                        font-size: $mobile_fontsize;
+                        line-height: 38px;
+                    }
+                }
+                .features-title-info{
+                    font-size: $btn_fontsize;
+                    line-height: 28px;
+                }
+            }
+            .features-bottom{
+                max-width: $mobile_content_width;
+                grid-template-columns: repeat(1, 1fr);
+                .features-card{
+                    max-width: $mobile_content_width;
+                    .features-card-content{
+                        .features-card-title{
+                            font-size: $btn_fontsize;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Mobile Analytic Section
+    .analytic-container{
+        max-width: $mobile_width;
+        padding: 64px 16px;
+        gap: 48px;
+        .analytic-left-content {
+            max-width: 100%;
+            gap: 48px;
+            .analytic-heading {
+                font-size: $mobile_fontsize;
+                line-height: 38px;
+            }
+            .analytic-info{
+                font-size: $btn_fontsize;
+                line-height: 28px;
+            }
+        }
+        .analytic-right-content {
+           max-width: 100%;
+           & img{
+            max-width: 100%;
+           }
+        }
+    }
+    //Mobile Trial Section
+    .trial-container{
+        max-width: $mobile_width;
+        padding: 32px 16px;
+        .trial-green-container{
+            max-width: $mobile_content_width;
+            align-items: center;
+            text-align: center;
+    
+            .trial-content{
+                max-width: 279px;
+                gap: 32px;
+                .trial-top-content{
+                    gap: 16px;
+                    align-items: center;
+                    text-align: center;
+                    .trial-main-title{
+                        font-size: $mobile_fontsize;
+                        line-height: 38px;
+                    }
+                    .trial-sub-title{
+                        font-size: $btn_fontsize;
+                        line-height: 28px;
+                    }
+                }
+                #trial-btn{
+                    max-width: 279px;
+                    width: 100%;
+                    font-size: $standard_fontsize;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    //Mobile Footer Section
+    footer{
+        max-width: $mobile_width;
+        padding: 48px 16px 0px 16px;
+        
+        .footer-top{
+            padding: 0;
+            max-width: $mobile_content_width;
+            gap: 48px;
+            .footer-right-content{
+                max-width: $mobile_content_width;
+            }
+        }
+        .footer-bottom{
+            flex-direction: column;
+            gap: 12px;
+            max-width: $mobile_content_width;
+            .footer-socials{
+                max-width: 168px;
+            }
+        }
+    }
+}
